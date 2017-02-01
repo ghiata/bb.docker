@@ -9,4 +9,4 @@ WORKDIR backbase
 RUN mvn archetype:generate -DarchetypeArtifactId=launchpad-archetype-CXP5.6 -DarchetypeGroupId=com.backbase.launchpad -DarchetypeVersion=2.2.0 -DgroupId=com.backbase.training -DartifactId=badbase -DinteractiveMode=false
 WORKDIR /backbase/badbase
 RUN mvn clean install -Pclean-database
-RUN sh run.sh -d
+RUN bash run.sh
